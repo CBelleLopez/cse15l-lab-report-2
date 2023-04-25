@@ -2,7 +2,7 @@
 ## Experimenting with StringServer
 Below is my code for StringServer as well as an untouched Server.java file from the Week 2 lab.
 
-![Image](StringServer.png) ![Image](Server-pic.png)
+![Image](StringServer-pic.png) ![Image](Server-pic.png)
 
 After running and compiling the files, it will tell us we can now visit the site!
 
@@ -39,4 +39,55 @@ Here is an example of adding "Goodbye":
 3. As stated above, the Handler class has "output" as an instance variable to print all the strings entered. In this case, since "Greetings!" has been printed beforehand, the server will have "Greetings!" and "Goodbye" both printed on separate lines
 
 ## Lab 3 Bugs
+One bug from lab 3 was the method that returns a new array with all elements of the input array in reverse order:
+  
+![Image](Buggy-reverse.png)
+  
+Failure inducing JUnit test:
 
+```
+@Test
+  public void testReversed3() {
+    int[] input1 = {4,5,6,7,8};
+    assertArrayEquals(new int[]{8,7,6,5,4}, ArrayExamples.reversed(input1));
+  }
+```
+  
+Passing JUnit test:
+  
+```
+@Test
+  public void testReversed() {
+    int[] input1 = { };
+    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
+  }
+```
+
+Symptom:
+  
+![Image](Symptom-pic.png)
+  
+  
+Before change:
+  
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
+
+After change:
+  
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    return newArray;
+  }
+```
