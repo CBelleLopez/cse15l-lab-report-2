@@ -18,3 +18,14 @@ This means that the full link will be:
 > http://localhost:4000/add-message?s=<string>
 
 * Note: In this case, the port number is 4000 so it should be replaced with a different number if a different one is used!
+  
+Here is an example of adding "Greetings!":
+
+![Image](Greetings-pic.png)
+  
+1. The methods that are called in my code are *handleRequest* in StringServer.java and within Server.java we have *start* and *handle*
+2. 
+  
+Here is an example of adding "Goodbye":
+  
+![Image](Goodbye-pic.png)
