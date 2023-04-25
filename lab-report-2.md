@@ -8,6 +8,7 @@ After running and compiling the files, it will tell us we can now visit the site
 
 ![Image](Running-server.png)
 
+
 Now that we have the link, we want to add a message to the site by using:
 
 `/add-message?s=<string>`
@@ -19,6 +20,7 @@ This means that the full link will be:
 
 * Note: In this case, the port number is 4000 so it should be replaced with a different number if a different one is used!
   
+  
 Here is an example of adding "Greetings!":
 
 ![Image](Greetings-pic.png)
@@ -28,6 +30,7 @@ Here is an example of adding "Greetings!":
 3. Within the Handler class of StringServer.java, the url is being read every time we change it, so when when a new string is inputted, the output is being changed to account for the new word. In this case, the server will only have "Greetings!" displayed
   
 Here is an example of adding "Goodbye":
+  
   
 ![Image](Goodbye-pic.png)
   
