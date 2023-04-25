@@ -16,3 +16,5 @@ Now that we have the link, we want to add a message to the site by using:
   
 This means that the full link will be:
 > http://localhost:4000/add-message?s=<string>
+
+* Note: In this case, the port number is 4000 so it should be replaced with a different number if a different one is used!
