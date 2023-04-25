@@ -32,6 +32,7 @@ Here is an example of adding "Greetings!":
 Here is an example of adding "Goodbye":
   
   
+  
 ![Image](Goodbye-pic.png)
   
 1. The same methods are being called in this example as well: *handleRequest*, *start*, and *handle*
