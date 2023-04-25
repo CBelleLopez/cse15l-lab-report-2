@@ -12,7 +12,7 @@ Now that we have the link, we want to add a message to the site by using:
 
 `/add-message?s=<string>`
   
-* Note: "<string>" in the URL needs to be replaced with an actual string like: "hello" or "goodbye"
+* Note: The <, string, and, > in the URL needs to be replaced with an actual string like: "hello" or "goodbye"
   
 This means that the full link will be:
 > http://localhost:4000/add-message?s=<string>
