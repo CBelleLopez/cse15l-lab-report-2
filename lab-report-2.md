@@ -24,7 +24,8 @@ Here is an example of adding "Greetings!":
 ![Image](Greetings-pic.png)
   
 1. The methods that are called in my code are *handleRequest* in StringServer.java and within Server.java we have *start* and *handle*
-2. 
+2. The arguments for *handleRequest* is a **url** of type URI, for *start* we have **port** of type int and **handler** of type URLHandler, and for *handle* it takes in **exchange** of type HttpExchange
+  
   
 Here is an example of adding "Goodbye":
   
