@@ -32,9 +32,11 @@ Here is an example of adding "Greetings!":
 Here is an example of adding "Goodbye":
   
   
-  
 ![Image](Goodbye-pic.png)
   
 1. The same methods are being called in this example as well: *handleRequest*, *start*, and *handle*
 2. The arguments are the same as above except **url** will have the value of the full link with "Goodbye" added at the end
 3. As stated above, the Handler class has "output" as an instance variable to print all the strings entered. In this case, since "Greetings!" has been printed beforehand, the server will have "Greetings!" and "Goodbye" both printed on separate lines
+
+## Lab 3 Bugs
+
