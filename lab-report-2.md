@@ -94,3 +94,5 @@ The fix addresses the issue because before the change, newArray wasn't being cha
   
 ## Something I didn't know
 One thing that I didn't know before was how to make a server and how to update what's displayed. Although most, if not all, the code written to create the site was already given to us, it was nice to be able to read and see what portion of the code does what. This made me ultimately realize that creating and changing what's on a server is mostly the same process. For example, we were first exposed to creating servers in Lab 2 which was used to display or increment a number while StringServer uses that foundation but only changes to one method, handleRequest, was necessary.
+
+  
