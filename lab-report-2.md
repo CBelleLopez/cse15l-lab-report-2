@@ -41,8 +41,6 @@ Here is an example of adding "Goodbye":
 ## Lab 3 Bugs
 One bug from lab 3 was the method that returns a new array with all elements of the input array in reverse order:
   
-![Image](Buggy-reverse.png)
-  
 Failure inducing JUnit test:
 
 ```
